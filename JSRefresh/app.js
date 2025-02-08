@@ -60,7 +60,7 @@ console.log(user1);
 user1.greet(); */
 
 
-const hobbies = ["Sports", "Cooking", "Reading"];
+/* const hobbies = ["Sports", "Cooking", "Reading"];
 console.log(hobbies[0]);
 
 hobbies.push("Working");
@@ -68,8 +68,88 @@ console.log(hobbies);
 
 const index = hobbies.findIndex((item) => item === 'Sports');
 
-console.log(index);
+console.log(index); */
 
 //const editedHobbies = hobbies.map((item) => item + "!");
-const editedHobbies = hobbies.map((item) => item + ({text: item}));
-console.log(editedHobbies);
+/* const editedHobbies = hobbies.map((item) => item + ({text: item}));
+console.log(editedHobbies); */
+
+//const userNameData = [ "Max", "Smith" ]
+//const firstName = userNameData[0];
+//const lastName = userNameData[1];
+// or
+const [firstName, lastName] = ["Max", "Smith"]
+
+/* const user = {
+    name: "Max",
+    age: 34
+};
+const name = user.name;
+const age = user.age; */
+//or
+const hobbies = ["Sports", "Cooking"];
+const {name: userName, age} = {
+    name: "Max",
+    age: 34
+};
+
+console.log(userName);
+console.log(age);
+
+const newHobbies = ["Reading"];
+
+const mergedHobbies = [...hobbies, ...newHobbies];
+console.log(mergedHobbies);
+
+const extendedUser = {
+    isAdmin: true,
+    ...user
+};
+console.log(extendedUser);
+
+const password = prompt("Your password");
+
+if (password === "Hello") {
+    console.log("Hello works");
+} else if (password === "hello") {
+    console.log("hello works");
+} else{
+    console.log("Access not granted.");
+};
+
+for (const hobby of hobbies){
+    console.log(hobby);
+};
+
+const list = document.querySelector("ul");
+list.remove();
+
+function handleTimeout(){
+    console.log("Timed out!");
+}
+
+const handleTimeout2 = () => {
+    console.log("Timed out ... again!");
+};
+
+setTimeout(handleTimeout, 2000);
+setTimeout(handleTimeout2, 3000);
+setTimeout(() =>{
+    console.log("more timing out...");
+}, 4000);
+
+function init(){
+    function greet(){
+        console.log("Hi");
+    };
+
+    greet();
+};
+
+greet() // does not work as it is nested in init
+init() // does work.
+
+let userMessage = "Hello";
+userMessage = "Hello there"; // does not add to previous string, it replaces it.
+hobbies.push("Working");
+console.log(hobbies);
