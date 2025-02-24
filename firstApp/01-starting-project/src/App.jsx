@@ -8,7 +8,7 @@ import { EXAMPLES } from './data.js';
 
 function App() {
 
-  const [selectedTopic, setSelectedTopic] = useState('Please click a button')
+  const [selectedTopic, setSelectedTopic] = useState('components')
 
   function handleSelect(selectedButton) {
     // selectedButton => 'components', 'jsx', 'props', 'state'
