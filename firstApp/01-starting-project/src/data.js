@@ -29,3 +29,38 @@ export const CORE_CONCEPTS = [
       'React-managed data which, when changed, causes the component to re-render & the UI to update.',
   },
 ];
+
+export const EXAMPLES ={
+  components: {
+    title: 'Components',
+    description: 'Components are the building blocks of react applications.',
+    code: `
+function Welcome() {
+  return <h1>Hello Universe</h1>;
+}`
+  },
+  jsx: {
+    title: 'JSX',
+    description: 'Components are the building blocks of react applications.',
+    code: `
+function Welcome() {
+  return <h1>Hello Universe</h1>;
+}`
+  },
+  props: {
+    title: 'Props',
+    description: 'Components are the building blocks of react applications.',
+    code: `
+function Welcome() {
+  return <h1>Hello Universe</h1>;
+}`
+  },
+  state: {
+    title: 'State',
+    description: 'Components are the building blocks of react applications.',
+    code: `
+function Welcome() {
+  return <h1>Hello Universe</h1>;
+}`
+  }
+}
