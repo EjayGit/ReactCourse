@@ -1,4 +1,5 @@
 import CoreConcept from './CoreConcept.jsx';
+import { CORE_CONCEPTS } from '../src/data.js';
 
 export default function CoreConcepts(){
     return (
