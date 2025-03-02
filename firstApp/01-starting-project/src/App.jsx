@@ -10,7 +10,6 @@ function App() {
       <main>
         <CoreConcepts/>
         <Examples/>
-        <h2>Time to get started!</h2>
       </main>
     </div>
   );
