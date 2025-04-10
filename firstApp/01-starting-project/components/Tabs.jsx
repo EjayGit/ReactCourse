@@ -1,10 +1,10 @@
 import { Children } from "react";
 
-export default function Tabs({children, buttons}) {
+export default function Tabs({children, buttons, ButtonsContainer}) {
     return <>
-        <menu>
+        <ButtonsContainer>
             {buttons}
-        </menu>
+        </ButtonsContainer>
         {children}
     </>
 }
